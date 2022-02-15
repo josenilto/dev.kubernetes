@@ -57,7 +57,7 @@ não
 Comando utilizado para visualizar os nodes que fazem parte do meu node?
 
 ```bash
-**kubectl get nodes**
+kubectl get nodes
 ```
 
 
