@@ -72,7 +72,7 @@ Qual o comando utilizado para exibir os detalhes sobre determinado deployment, s
 
 ```bash
 kubectl get deploy nome_deployment -o yaml
-
+```
 
 O que melhor define um service node port?
 
