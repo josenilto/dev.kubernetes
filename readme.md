@@ -20,7 +20,7 @@ Atualizar os pacote do seu sistema.
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-####
+--
 
 
 Comando realiza o download das imagens de componentes do Kubernetes, como o etcd ou API, antes da criação do cluster?
