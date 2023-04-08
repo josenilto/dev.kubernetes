@@ -71,11 +71,16 @@ sudo apt-get install \
     lsb-release
 ```
 
+The command "sudo mkdir -m 0755 -p /etc/apt/keyrings" is used to create a directory with specific permissions on Ubuntu and other Debian-based Linux distributions.
+
 Add Docker’s official GPG key:
 
 ```bash
 sudo mkdir -m 0755 -p /etc/apt/keyrings
 ```
+
+The command "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg" is used to download and add the Docker GPG key to the apt keyring on Ubuntu and other Debian-based Linux distributions.
+
 
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
