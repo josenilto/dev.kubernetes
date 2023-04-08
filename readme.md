@@ -130,6 +130,66 @@ Containerd.io is a container runtime that provides a way to run and manage conta
 sudo apt-get install containerd.io
 ```
 
+### Install containerd
+
+https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd-systemd
+
+https://github.com/containernetworking/plugins/releases
+
+```bash
+wget https://github.com/containernetworking/plugins/releases/download/v1.2.0/cni-plugins-linux-amd64-v1.2.0.tgz
+```
+```bash
+mkdir -p /opt/cni/bin
+```
+
+```bash
+tar Cxzvf /opt/cni/bin cni-plugins-linux-amd64-v1.2.0.tgz
+```
+
+```bash
+systemctl status containerd
+```
+
+Configuring the systemd cgroup driver 
+To use the systemd cgroup driver in /etc/containerd/config.toml with runc, set
+
+```bash
+vim /etc/containerd/config.toml
+```
+
+```bash
+  [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
+    SystemdCgroup = true
+```
+
+Note:
+If you installed containerd from a package (for example, RPM or .deb), you may find that the CRI integration plugin is disabled by default.
+
+You need CRI support enabled to use containerd with Kubernetes. Make sure that cri is not included in thedisabled_plugins list within /etc/containerd/config.toml; if you made changes to that file, also restart containerd.
+
+If you experience container crash loops after the initial cluster installation or after installing a CNI, the containerd configuration provided with the package might contain incompatible configuration parameters. Consider resetting the containerd configuration with containerd config default > /etc/containerd/config.toml as specified in getting-started.md and then set the configuration parameters specified above accordingly.
+
+If you apply this change, make sure to restart containerd:
+
+```bash
+sudo systemctl restart containerd
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
