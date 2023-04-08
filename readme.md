@@ -32,7 +32,7 @@ The command "cat /etc/fstab" is used to display the contents of the "/etc/fstab"
 cat /etc/fstab
 ```
 
-
+The command "sudo apt-get update && sudo apt-get upgrade" is used in Ubuntu and other Debian-based Linux distributions to update and upgrade the software packages installed on the system.
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade
@@ -114,6 +114,8 @@ echo \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
+
+The command "sudo apt-get update && sudo apt-get upgrade" is used in Ubuntu and other Debian-based Linux distributions to update and upgrade the software packages installed on the system.
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade
