@@ -52,6 +52,8 @@ sudo sysctl --system
 
 #### Install Docker Engine
 
+The command "sudo apt-get update && sudo apt-get upgrade" is used in Ubuntu and other Debian-based Linux distributions to update and upgrade the software packages installed on the system.
+
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 ```
@@ -92,6 +94,11 @@ echo \
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 ```
+
+The command "sudo apt-get install containerd.io" is used to install the containerd.io package on Ubuntu and other Debian-based Linux distributions.
+
+Containerd.io is a container runtime that provides a way to run and manage containerized applications on Linux. It's often used in conjunction with container orchestration tools such as Docker Swarm, Kubernetes, or Apache Mesos.
+
 
 ```bash
 sudo apt-get install containerd.io
