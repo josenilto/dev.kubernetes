@@ -1,6 +1,8 @@
 ## Dev Kubernetes | Configurações [ ubuntu 20.04 ]
 
-# Índice 
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
 * [Título e Imagem de capa](#Título-e-Imagem-de-capa)
 * [Badges](#badges)
@@ -14,6 +16,12 @@
 * [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
 * [Licença](#licença)
 * [Conclusão](#conclusão)
+
+
+
+# Índice 
+
+# Descrição do Projeto
 
 
 
