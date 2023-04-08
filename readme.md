@@ -50,7 +50,55 @@ Apply sysctl params without reboot
 sudo sysctl --system
 ```
 
-# Pessoas Contribuidoras
+#### Install Docker Engine
+
+```bash
+sudo apt-get update && sudo apt-get upgrade
+```
+
+Install using the apt repository   
+Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository.   
+Afterward, you can install and update Docker from the repository.
+
+Set up the repository Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+
+```bash
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+```
+
+Add Docker’s official GPG key:
+
+```bash
+sudo mkdir -m 0755 -p /etc/apt/keyrings
+```
+
+```bash
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
+
+Use the following command to set up the repository:
+
+```bash
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+```bash
+sudo apt-get update && sudo apt-get upgrade
+```
+
+```bash
+sudo apt-get install containerd.io
+```
+
+
+
 
 # Índice 
 
