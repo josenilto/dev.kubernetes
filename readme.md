@@ -19,6 +19,9 @@
 
 # Tecnologias Utilizadas
 
+Forwarding IPv4 and letting iptables see bridged traffic			
+Execute the below mentioned instructions:
+
 # Pessoas Contribuidoras
 
 # Índice 
