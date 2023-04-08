@@ -58,7 +58,6 @@ The command "sudo apt-get update && sudo apt-get upgrade" is used in Ubuntu and 
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-Install using the apt repository   
 Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository.   
 Afterward, you can install and update Docker from the repository.
 
