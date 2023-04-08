@@ -1,4 +1,4 @@
-## Dev Kubernetes | Confiogurações [ ubuntu 20.04 ]
+## Dev Kubernetes | Configurações [ ubuntu 20.04 ]
 
 
 #### Master & Works
