@@ -1,4 +1,27 @@
-## Dev Kubernetes
+## Dev Kubernetes | Confiogurações [ ubuntu 20.04 ]
+
+
+#### Master & Works
+
+```bash
+cat /etc/os-release
+```
+Desativa swap
+```bash
+sudo swapoff -a
+```
+
+Verificar se está desativado
+```bash
+cat /etc/fstab
+```
+Atualizar os pacote do seu sistema.
+```bash
+sudo apt-get update && sudo apt-get upgrade
+```
+
+####
+
 
 Comando realiza o download das imagens de componentes do Kubernetes, como o etcd ou API, antes da criação do cluster?
 
