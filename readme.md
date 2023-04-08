@@ -14,6 +14,9 @@
 * [Conclusão](#conclusão)
 
 
+
+01 STEP;
+
 The command "cat /etc/os-release" is used to display information about the operating system installed on the system.
 
 ```bash
@@ -38,7 +41,7 @@ The command "sudo apt-get update && sudo apt-get upgrade" is used in Ubuntu and 
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-### Forwarding IPv4
+### 02 STEP; Forwarding IPv4
 
 Execute the below mentioned instructions:
 
@@ -70,7 +73,7 @@ Apply sysctl params without reboot
 sudo sysctl --system
 ```
 
-### Install Docker Engine
+### 03 STEP; Docker Engine
 
 The command "sudo apt-get update && sudo apt-get upgrade" is used in Ubuntu and other Debian-based Linux distributions to update and upgrade the software packages installed on the system.
 
@@ -130,7 +133,7 @@ Containerd.io is a container runtime that provides a way to run and manage conta
 sudo apt-get install containerd.io
 ```
 
-### Install containerd
+### 04 STEP; Containerd
 
 https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd-systemd
 
