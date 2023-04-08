@@ -17,9 +17,8 @@
 
 #### Acesso ao Projeto
 
-#### Tecnologias Utilizadas
+### Forwarding IPv4
 
-Forwarding IPv4 and letting iptables see bridged traffic    
 Execute the below mentioned instructions:
 
 ```bash
@@ -50,7 +49,7 @@ Apply sysctl params without reboot
 sudo sysctl --system
 ```
 
-#### Install Docker Engine
+### Install Docker Engine
 
 The command "sudo apt-get update && sudo apt-get upgrade" is used in Ubuntu and other Debian-based Linux distributions to update and upgrade the software packages installed on the system.
 
