@@ -14,8 +14,29 @@
 * [Conclusão](#conclusão)
 
 
+The command "cat /etc/os-release" is used to display information about the operating system installed on the system.
 
-#### Acesso ao Projeto
+```bash
+cat /etc/os-release
+```
+
+The command "sudo swapoff -a" is used to disable all swap spaces on a Linux system.
+
+```bash
+sudo swapoff -a
+```
+
+The command "cat /etc/fstab" is used to display the contents of the "/etc/fstab" file on a Linux system.
+
+```bash
+cat /etc/fstab
+```
+
+
+
+```bash
+sudo apt-get update && sudo apt-get upgrade
+```
 
 ### Forwarding IPv4
 
