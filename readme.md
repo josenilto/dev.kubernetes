@@ -19,15 +19,21 @@
 
 
 
+# Acesso ao Projeto
+
+# Tecnologias Utilizadas
+
+# Pessoas Contribuidoras
+
 # Índice 
 
 # Descrição do Projeto
 
+# Status do Projeto
 
+# Licença
 
-<p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
-</p>
+# Conclusão
 
 #### Master & Works
 
