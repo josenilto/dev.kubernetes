@@ -107,6 +107,9 @@ systemctl status containerd
 vim /etc/containerd/config.toml
 ```
 
+Comenta a **`linha 15.1`** conforme o exemplo abaixo:
+**`# disabled_plugins = ["cri"]`**
+
 ```bash
 [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
 [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
