@@ -14,6 +14,57 @@
 * [Conclusão](#conclusão)
 
 
+PASSO 01: Instalar e configurar pré-requisitos. 
+
+Encaminhando o IPv4 e permitindo que o iptables veja o tráfego em ponte.    
+Execute as instruções abaixo mencionadas:
+
+```bash
+cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+overlay
+br_netfilter
+EOF
+```
+
+```bash
+sudo modprobe overlay
+sudo modprobe br_netfilter
+```
+
+sysctl params required by setup, params persist across reboots.
+```bash
+cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-iptables  = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward                 = 1
+EOF
+```
+
+Apply sysctl params without reboot
+```bash
+sudo sysctl --system
+```
+
+PASSO 02: Install Docker Engine.
+
+Atualização do repositório.
+```bash
+sudo apt-get update && sudo apt-get upgrade -y
+```
+
+
+
+
+
+
+
+
+
+
+Configurado o container runtimes.
+
+
+
 
 01 STEP;
 
