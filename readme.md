@@ -80,7 +80,8 @@ sudo apt-get install containerd.io
 **PASSO 04:** Configurado o container runtimes.
 
 ```bash
-wget https://github.com/containernetworking/plugins/releases/download/v1.2.0/cni-plugins-linux-amd64-v1.2.0.tgz
+wget \
+https://github.com/containernetworking/plugins/releases/download/v1.2.0/cni-plugins-linux-amd64-v1.2.0.tgz
 ```
 
 ```bash
