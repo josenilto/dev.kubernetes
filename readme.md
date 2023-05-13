@@ -144,6 +144,14 @@ Atualize o índice de pacotes apt, instale kubelet, kubeadm e kubectl e fixe sua
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
 ```
+Lista os pacotes disponiveis para instalação:
+```bash
+sudo apt list -a kubeadm
+```
+Instalando a versão do kubeadm:
+```bash
+sudo apt-get install kubeadm=1.27.1-00
+```
 
 
 
