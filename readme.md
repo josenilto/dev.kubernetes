@@ -107,7 +107,7 @@ systemctl status containerd
 vim /etc/containerd/config.toml
 ```
 
-Comenta a **`linha 15.1`** conforme o exemplo abaixo:
+Comenta a **`linha 15.1`** conforme o exemplo:
 **`# disabled_plugins = ["cri"]`**
 
 ```bash
@@ -155,6 +155,17 @@ Instalando a versão do kubeadm:
 ```bash
 sudo apt-get install kubeadm=1.27.1-00
 ```
+
+Baixar o **`[config/images]`** Pulled registry.k8s.io/
+```bash
+kubeadm config images pull
+```
+
+Executando as configurações no ambiente:
+```bash
+kubeadm init
+```
+
 
 
 <h4 align="center"> 
