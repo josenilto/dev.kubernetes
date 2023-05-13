@@ -6,6 +6,10 @@
   </a>
 </p>
 
+✅ **PASSO 00:** Atualizar o servidor verificar se o swap está desativado.
+
+
+
 ✅ **PASSO 01:** Instalar e configurar pré-requisitos. 
 
 Encaminhando o IPv4 e permitindo que o iptables veja o tráfego em ponte.    
@@ -40,7 +44,7 @@ sudo sysctl --system
 
 ✅ **PASSO 02:** Install Docker Engine.
 
-Atualizar repositório apt.
+Atualize o índice de pacotes e repositório apt.
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
 ```
@@ -70,7 +74,7 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-Atualizar repositório apt.
+Atualize o índice de pacotes e repositório apt.
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
 ```
@@ -97,7 +101,7 @@ tar Cxzvf /opt/cni/bin cni-plugins-linux-amd64-v1.2.0.tgz
 systemctl status containerd
 ```
 
-**PASSO 04:** Editando o arquivo **`config.toml`**.
+✅ **PASSO 05:** Editando o arquivo **`config.toml`**.
 
 ```bash
 vim /etc/containerd/config.toml
@@ -111,6 +115,34 @@ vim /etc/containerd/config.toml
 
 ```bash
 sudo systemctl restart containerd
+```
+
+✅ **PASSO 06:** 
+
+Atualize o índice de pacotes e repositório apt.
+```bash
+sudo apt-get update && sudo apt-get upgrade -y
+```
+
+```bash
+sudo apt-get install -y apt-transport-https ca-certificates curl
+```
+
+Faça o download da chave de assinatura pública do Google Cloud:
+```bash
+sudo curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg \
+https://packages.cloud.google.com/apt/doc/apt-key.gpg
+```
+
+Adicione o repositório apt do Kubernetes:
+```bash
+echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | \
+sudo tee /etc/apt/sources.list.d/kubernetes.list
+```
+
+Atualize o índice de pacotes apt, instale kubelet, kubeadm e kubectl e fixe suas versões:
+```bash
+sudo apt-get update && sudo apt-get upgrade -y
 ```
 
 
