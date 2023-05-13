@@ -1,6 +1,8 @@
 ## Dev Kubernetes k8s | Cluster Single e Multi control plane.
 
+<p align="center">
 [![demo](https://github.com/josenilto/dev.kubernetes/blob/master/imagens/k8s-hor.png)](https://kubernetes.io/)
+</p>
 
 ✅ **PASSO 01:** Instalar e configurar pré-requisitos. 
 
