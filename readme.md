@@ -14,7 +14,7 @@
 * [Conclusão](#conclusão)
 
 
-PASSO 01: Instalar e configurar pré-requisitos. 
+**PASSO 01:** Instalar e configurar pré-requisitos. 
 
 Encaminhando o IPv4 e permitindo que o iptables veja o tráfego em ponte.    
 Execute as instruções abaixo mencionadas:
@@ -45,7 +45,7 @@ Apply sysctl params without reboot
 sudo sysctl --system
 ```
 
-PASSO 02: Install Docker Engine.
+**PASSO 02:** Install Docker Engine.
 
 Atualização do repositório.
 ```bash
