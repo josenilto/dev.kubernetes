@@ -31,7 +31,7 @@ sudo modprobe overlay
 sudo modprobe br_netfilter
 ```
 
-sysctl params required by setup, params persist across reboots.
+sysctl parâmetros exigidos pela configuração, os parâmetros persistem nas reinicializações.
 ```bash
 cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-iptables  = 1
@@ -40,21 +40,47 @@ net.ipv4.ip_forward                 = 1
 EOF
 ```
 
-Apply sysctl params without reboot
+
+Aplicar parâmetros sysctl sem reiniciar.
 ```bash
 sudo sysctl --system
 ```
 
 **PASSO 02:** Install Docker Engine.
 
-Atualização do repositório.
+Atualizar repositório apt.
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
+Atualize o índice de pacotes apt e instale pacotes para permitir que o apt use um repositório por HTTPS.
+```bash
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+```
 
+Criar o diretório no **`/etc/apt/`**
+Adicione a chave GPG oficial do Docker:
+```bash
+sudo mkdir -m 0755 -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
 
+Use o seguinte comando para configurar o repositório:
+```bash
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
 
+Atualizar repositório apt.
+```bash
+sudo apt-get update && sudo apt-get upgrade -y
+```
 
 
 
