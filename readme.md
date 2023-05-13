@@ -2,7 +2,7 @@
 
 
 
-**PASSO 01:** Instalar e configurar pré-requisitos. 
+✅ **PASSO 01:** Instalar e configurar pré-requisitos. 
 
 Encaminhando o IPv4 e permitindo que o iptables veja o tráfego em ponte.    
 Execute as instruções abaixo mencionadas:
@@ -34,7 +34,7 @@ Aplicar parâmetros sysctl sem reiniciar.
 sudo sysctl --system
 ```
 
-**PASSO 02:** Install Docker Engine.
+✅ **PASSO 02:** Install Docker Engine.
 
 Atualizar repositório apt.
 ```bash
@@ -71,13 +71,13 @@ Atualizar repositório apt.
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
-**PASSO 03:** Instalar o containerd
+✅ **PASSO 03:** Instalar o containerd
 
 ```bash
 sudo apt-get install containerd.io
 ```
 
-**PASSO 04:** Configurado o container runtimes.
+✅ **PASSO 04:** Configurado o container runtimes.
 
 ```bash
 wget \
