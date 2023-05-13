@@ -1,4 +1,4 @@
-## [ Kubernetes k8s ] Dev | Single control plane e Multi control plane Cluster.
+## Dev Kubernetes k8s | Cluster Single e Multi control plane.
 
 
 
@@ -71,13 +71,42 @@ Atualizar repositório apt.
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
+**PASSO 03:** Instalar o containerd
 
+```bash
+sudo apt-get install containerd.io
+```
 
+**PASSO 04:** Configurado o container runtimes.
 
+```bash
+wget https://github.com/containernetworking/plugins/releases/download/v1.2.0/cni-plugins-linux-amd64-v1.2.0.tgz
+```
 
+```bash
+mkdir -p /opt/cni/bin
+tar Cxzvf /opt/cni/bin cni-plugins-linux-amd64-v1.2.0.tgz
+```
 
-Configurado o container runtimes.
+```bash
+systemctl status containerd
+```
 
+**PASSO 04:** Editando o arquivo **`config.toml`**.
+
+```bash
+vim /etc/containerd/config.toml
+```
+
+```bash
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
+  SystemdCgroup = true
+```
+
+```bash
+sudo systemctl restart containerd
+```
 
 
 
