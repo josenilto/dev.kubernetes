@@ -1,4 +1,4 @@
-## Dev Kubernetes k8s | Infraestrutura, Cloud, Microsserviços, Docker e Cluster
+## Dev k8s | Infraestrutura, Cloud, Microsserviços, Docker e Cluster
 
 <p align="center">
   <a href="https://kubernetes.io">
