@@ -1,10 +1,14 @@
-## Dev Kubernetes k8s | Cluster Single e Multi control plane.
+## Dev Kubernetes k8s | Infraestrutura, Cloud, Microsserviços, Docker e Cluster
 
 <p align="center">
   <a href="https://kubernetes.io">
     <img alt="kubernetes.io" src="https://github.com/josenilto/dev.kubernetes/blob/master/imagens/k8s-hor.png">
   </a>
 </p>
+
+
+
+
 
 ✅ **PASSO 00:** Atualizar o servidor verificar se o swap está desativado.
 
