@@ -78,9 +78,17 @@ kubectl taint: Gerencie a distribuição de pods de acordo com as característic
 ```bash
 bash kubectl taint nodes <nome_do_nó> key=value:efeito_da_marcação
 ```
-
+kubectl expose deploy nginx-deployment --type=LoadBalancer --port=80 --name=nginx-svc
 ```bash
-
+kubectl expose deploy nginx-deployment --type=LoadBalancer --port=80 --name=nginx-svc
+```
+Lista somente avisos
+```bash
+kubectl get events --field-selector type=Warning
+```
+Lista eventos recentes para todos os recursos do sistema
+```bash
+kubectl get events
 ```
 
 ```bash
@@ -103,10 +111,6 @@ bash kubectl taint nodes <nome_do_nó> key=value:efeito_da_marcação
 
 ```
 
-```bash
-
-```
-
-```bash
-
-```
+https://grafana.com/docs/grafana/latest/setup-grafana/installation/kubernetes/
+https://www.itwonderlab.com/ansible-kubernetes-vagrant-tutorial/
+https://medium.com/@SambathKumarJ/effortless-kubernetes-setup-a-guide-to-deploying-microk8s-using-terraform-8332851374d2
