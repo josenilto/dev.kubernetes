@@ -1,3 +1,13 @@
+https://grafana.com/grafana/dashboards/?search=fluentd   
+https://grafana.com/grafana/dashboards/6417-kubernetes-cluster-prometheus/   
+https://grafana.com/grafana/dashboards/13502-minio-dashboard/  
+https://grafana.com/grafana/dashboards/13332-kube-state-metrics-v2/  
+https://grafana.com/grafana/dashboards/14981-coredns/  
+https://grafana.com/grafana/dashboards/1860-node-exporter-full/  
+https://grafana.com/grafana/dashboards/8588-1-kubernetes-deployment-statefulset-daemonset-metrics/  
+https://grafana.com/grafana/dashboards/10000-kubernetes-cluster-monitoring-via-prometheus/
+
+
 kubectl version: Garanta que tudo esteja atualizado e conectando corretamente.
 ```bash
 kubectl version
