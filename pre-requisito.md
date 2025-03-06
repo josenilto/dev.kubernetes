@@ -1,3 +1,7 @@
+https://gitlab.com/treinamentos1  
+https://gitlab.com/users/xavki/projects
+
+
 https://archive.eksworkshop.com/beginner/060_helm/helm_nginx/   
 https://grafana.com/grafana/dashboards/?search=fluentd   
 https://grafana.com/grafana/dashboards/6417-kubernetes-cluster-prometheus/   
